@@ -1,0 +1,177 @@
+/* RESET CSS */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* FIM RESET CSS */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+}
+
+header .menu {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+header .menu a {
+    margin: 50px;
+    font-size: 17px;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu .botoes {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu .botoes:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4747D9;
+    transition: width 0.3s ease;
+}
+
+.menu .botoes:hover {
+    color: #4747D9;
+}
+
+
+
+header .menu a button {
+    font-size: 17px;
+}
+
+header .logo img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.tire {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #6E6EFF;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+}
+
+btn-txt {
+    z-index: 1;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #4747D9;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+button:hover {
+    box-shadow: 1px 1px 200px #4747D9;
+    color: #fff;
+    border: none;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+.perfil {
+    border: #000 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    height: 480px;
+    background-color: white;
+}
+
+#foto {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-size: cover;
+    background-position: 50%;
+    margin: 20px;
+    background-image: url(foto.png);
+}
+
+#camera {
+    width: 640px;
+    height: 480px;
+    border-radius: 20px;
+    background-image: url(img/semCamera.png);
+    border: #000 solid 1px;
+}
+
+.botoesFoto{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#nome{
+    text-align: center;
+    font: 700 20px Poppins;
+}
+

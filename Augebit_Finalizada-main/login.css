@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .container{
+    display: flex;
+    padding: 16px 125px;    
+    justify-content: space-around;
+    align-items: center;
+}
+.botoesHeader a{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body{
+    background-color: #D9D9D9;
+    width: 100%;
+}
+.botoesHeader a:hover{
+    color: #4747D9;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #6E6EFF;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.btn-txt {
+    z-index: 1;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #4747D9;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 200px #4747D9;
+    color: #fff;
+    border: none;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+.botoesHeader{
+    display: flex;
+align-items: center;
+gap: 95px;
+}
+
+
+main{
+    background-color: #CCCFD4;
+    width: 100%;
+}
+
+.buttonEntrar {
+    font: 16px 'Poppins',sans-serif;
+}
+
+.formImg {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#form {
+    margin-left: 4rem;
+    margin-right: 18rem;
+}
+
+.footer{
+    display: inline-flex;
+    padding: 41px 127px;
+    justify-content: center;
+    align-items: center;
+    gap: 260px;
+}
+.footer .infos{
+    display: flex;
+align-items: center;
+gap: 152px;
+}
+.footer .augebit{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+}
+.footer .infos .texto{
+    color: #414246;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+}
+.footer .infos img{
+width: 225px;
+}
+.footer nav{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+}
+.footer nav a{
+    color: #414246;
+font-family: Poppins;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+}
+.footer .acompanhe{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 23px;
+}
+.footer .acompanhe .titulo{
+    color: #4747D9;
+    font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+}
+.footer .redes{
+    display: flex;
+align-items: flex-end;
+gap: 21px;
+}
+
+main{
+    display: inline-flex;
+padding: 122px 235px;
+justify-content: center;
+align-items: center;
+gap: 298px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+label{
+    color: #414246;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+}
+.inserir{
+    display: flex;
+    flex-direction: column;
+
+}
+.inserir input{
+    width: 330px;
+height: 49px;
+border-radius: 5px;
+background: #9A99FF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+padding-left: 20px;
+}
+
+.check input{
+    width: 24px;
+height: 24px;
+border-radius: 5px;
+border: 1px solid #414246;
+background: #CCCFD4;
+}
+.check{
+    display: flex;
+    gap: 10px;
+}
+
+form button {
+    --primary-color: #4747D9;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  form button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  form button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  form button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  form button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  form button:hover .arrow:before {
+    right: 0;
+  }
+
+@media screen and (max-width: 675px) {
+
+    #botao-matricula {
+        padding-bottom: 5px;
+        margin-left: -8px;
+        width: 100px;
+        height: 40px;
+    }
+
+    #form {
+        margin:0;
+    }
+
+    .formImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 40px 50px;
+    }
+    .footer .acompanhe{
+        padding: 0;
+    }
+    .footer .infos .texto{
+        width: 70%;
+        text-align: justify;
+        font-size: 8px;
+    }
+    .footer .augebit{
+        align-items: center;
+    }
+    .footer .augebit img{
+        width: 100px;
+    }
+    .footer nav a{
+        font-size: 12px;
+    }
+    .footer .infos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .header .botoesHeader{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+    .header .botoesHeader a,     .header .botoesHeader a span{
+        font-size: 13px;
+    }
+    .header .container{
+        display: flex;
+padding: 16px 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 13px;
+    }
+    .header img{
+        width: 100px;
+height: 18.487px;
+    }
+    .header .button{
+        height: 42px;
+        width: 120px;
+    }
+
+    main img, .forma{
+        display: none;
+    }
+
+    main{
+        padding: 40px 70px;
+        width: 100vw;
+    }
+    .inserir input{
+        width: 180px;
+height: 30px;
+border-radius: 2.467px;
+background: #9A99FF;
+    }
+    label{
+        font-size: 12px;
+    }
+    .check input{
+        width: 20px;
+        height: 20px;
+    }
+}

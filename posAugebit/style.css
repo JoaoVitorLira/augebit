@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #CCCFD4;
+}
+.banner{
+    height: 200px;
+    border-bottom: 1px solid #000;
+}
+.fotoPerfil #fotoDePerfil{
+    background-size: cover;
+    background-position: 50%;
+
+    background-image: url(img/foto.png);
+    width: 240px;
+    height: 240px;
+    border-radius: 275px;
+    border: 3px solid #4747D9;
+}
+#porCima{
+    width: 240px;
+    height: 240px;
+    border-radius: 275px;
+    position: absolute;
+    z-index: 99;
+    background-color: #333;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#porCima img{
+    width: 100px;
+    border: none;
+    height: auto;
+    
+}
+/* #canetaEditar{
+
+} */
+.infosPessoais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infosPessoais #nome{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.infosPessoais #email{
+    color: #CCCFD4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.estatisticas{
+    display: flex;
+width: 330px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 25px;
+flex-shrink: 0;
+}
+.estatistica{
+    color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.estaBold{
+    color: #59D1C7;
+}
+.infosPerfil{
+    display: inline-flex;
+height: 782px;
+padding: 0px 12px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 62px;
+background: #4747D9;
+}
+.pessoa{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotoPerfil{
+    position: absolute;
+    top: 85px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.meuProjeto .titulo{
+    color: #000;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.projetosAndamento{
+    display: flex;
+width: 859px;
+align-items: flex-start;
+align-content: flex-start;
+gap: 42px 57px;
+flex-wrap: wrap;
+}
+.meuProjeto{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 45px;
+margin-left: 70px;
+}
+.meusProjetos{
+    margin-top: -30px;
+}
+.projeto{
+    display: flex;
+    width: 370px;
+    height: 125px;
+    padding: 15px 21px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    flex-shrink: 0;
+    border-radius: 8px;
+border: 2px solid #4747D9;
+background: #A8AFB5;
+}
+.projeto .titulo{
+    color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.projeto .sub{
+    color: #414246;
+font-family: Poppins;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* @media screen and (min-width: ) {
+    
+} */

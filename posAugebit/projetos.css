@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* font-family: 'Poppins', sans-serif; */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+body{
+    background: #D9D9D9;
+}
+header{
+    width: 100vw;
+    display: inline-flex;
+padding: 30px 127px;
+justify-content: space-between;
+align-items: center;
+height: 20vh;
+}
+#fotoPerfil{
+    background-size: cover;
+    background-position: 50%;
+
+    background-image: url(img/foto.png);
+    width: 90px;
+    height: 90px;
+    border-radius: 275px;
+    border: 3px solid #4747D9;
+}
+.projeto .titulo{
+    color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.projeto .sub{
+    color: #414246;
+font-family: Poppins;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.titulos{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.projeto{
+    display: flex;
+width: 310px;
+height: 140px;
+padding: 15px 21px;
+align-items: center;
+gap: 16px;
+border-radius: 8px;
+border: 2px solid #4747D9;
+background: #A8AFB5;
+}
+.projetos{
+    display: flex;
+padding: 55px 62px 0px 62px;
+flex-direction: column;
+align-items: center;
+gap: 60px;
+width: 30vw;
+overflow: scroll;
+height: 79.9vh;
+}
+#projetosInfos{
+    width: 70vw;
+    height: 79.9vh;
+    background-color: #CCCFD4;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.geral{
+    display: flex;
+}
+form button {
+    --primary-color: #4747D9;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  form button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  form button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  form button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  form button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  form button:hover .arrow:before {
+    right: 0;
+  }
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+.inputDiv input, select, textarea{
+    width: 270px;
+height: 45px;
+border-radius: 7px;
+background: #FFF;
+font: 400 20px Poppins;
+padding-left: 20px;
+}
+.inputDiv label{
+    color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.inputFoto{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 12.5rem;
+}
+.inputFoto img{
+    width: 150px;
+}
+form{
+    display: inline-flex;
+height: 70vh;
+padding: 0px 96px;
+margin-top: 40px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+gap: 1.875rem;
+flex-shrink: 0;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+#descricaoProjetoInput{
+    width: 370px;
+    height: 170px;
+}
+.geralDentro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.infosChave{
+    display: flex;
+padding: 33px 117px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+border-bottom: 1px solid #000;
+width: 100%;
+}
+.infosChave .texto{
+    width: 380px;
+    color: #414246;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.titulosData{
+    display: flex;
+align-items: flex-start;
+justify-content: space-between;
+width: 50vw;
+}
+.infosChave .titulos{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.infosChave .titulos .titulo{
+    color: #000;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: -10px;
+}
+.infosChave .titulos .sub{
+    color: #414246;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+}
+.dataInicio{
+    color: #414246;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;    
+}
+.desenvolvimento{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10px;
+    gap: 90px ;
+    height: 300px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+}
+
+div.selecionada{
+    background-color: #3CC9E4;
+}
+.semNada{
+    background-color: #9A99FF;
+}
+.buttono {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    border-width: 0;
+    padding: 0 8px 12px;
+    min-width: 10em;
+    box-sizing: border-box;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  .button-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    padding: 8px 16px;
+    transform: translateY(0);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, .25);
+    transition-property: transform;
+    transition-duration: .2s;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .buttono:active .button-top {
+    transform: translateY(6px);
+  }
+  
+  .button-top::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    background-image: radial-gradient(#cd3f64, #9d3656);
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, .2), 0 1px 2px 1px rgba(255, 255, 255, .2);
+    transition-property: border-radius, padding, width, transform;
+    transition-duration: .2s;
+  }
+  
+  .buttono:active .button-top::after {
+    border-radius: 6px;
+    padding: 0 2px;
+  }
+  
+  .button-bottom {
+    position: absolute;
+    z-index: -1;
+    bottom: 4px;
+    left: 4px;
+    border-radius: 8px / 16px 16px 8px 8px;
+    padding-top: 6px;
+    width: calc(100% - 8px);
+    height: calc(100% - 10px);
+    box-sizing: content-box;
+    background-color: #803;
+    background-image: radial-gradient(4px 8px at 4px calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(4px 8px at calc(100% - 4px) calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(16px at -4px 0, white, transparent), radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), inset 0 -1px 3px 3px rgba(0, 0, 0, .4);
+    transition-property: border-radius, padding-top;
+    transition-duration: .2s;
+  }
+  
+  .buttono:active .button-bottom {
+    border-radius: 10px 10px 8px 8px / 8px;
+    padding-top: 0;
+  }
+  
+  .button-base {
+    position: absolute;
+    z-index: -2;
+    top: 4px;
+    left: 0;
+    border-radius: 12px;
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color: rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, .75), inset 0 2px 2px rgba(0, 0, 0, .25);
+  }
+
+  .projetos {
+    /* Adicione uma transição para suavizar a mudança de cor */
+    transition: background-color 0.3s ease;
+}
+
+.projeto {
+    cursor: grab;
+    user-select: none;
+}
+
+.projeto:active {
+    cursor: grabbing;
+}
+
+/* Adicione uma classe 'hovered' para destacar a div durante o drag */
+.projeto.hovered {
+    background-color: #C4C4C4;
+}

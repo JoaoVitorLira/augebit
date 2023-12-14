@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mude seu perfil - Augebit</title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/augebitIcon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Nossa logo">
+        </div>
+        <div class="menu">
+            <a href="" class="botoes">Sobre Nós</a>
+            <a href="" class="botoes">Entrar</a>
+            <a href="">
+                <button class="button type1" id="botao-matricula">
+                    <span class="btn-txt">Cadastre-se</span>
+                </button>
+            </a>
+        </div>
+    </header> -->
+
+    <h1 class="tire">Tire uma foto para o seu perfil!</h1>
+    <section>
+        <video id="camera" autoplay></video><!--Tem que ser a tag video junto ao autplay, para funcionar -->
+
+        <div class="perfil">
+            <div id="foto"></div>
+            <input id="nome" value="Nome" type="text">
+            <h5 id="email">seilaoque@gmail.com</h3>
+        </div>
+    </section>
+
+    <div class="botoesFoto">
+        <button class="type1" onclick="abrirCamera()">Abrir câmera</button>
+        <button class="type1" onclick="tirarFoto()">Tirar Foto</button>
+        <button class="type1" onclick="fechar()">Fechar câmera</button>
+        <button class="type1" onclick="apagarFoto()">Apagar foto</button>
+        <button class="type1" onclick="aplicarFoto()">Aplicar mudanças</button>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+
+</html>

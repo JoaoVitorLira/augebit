@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Augebit</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="animacao.css">
+    <link rel="shortcut icon" href="img/augebitIcon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader">
+            <div class="box box0">
+                <div></div>
+            </div>
+            <div class="box box1">
+                <div></div>
+            </div>
+            <div class="box box2">
+                <div></div>
+            </div>
+            <div class="box box3">
+                <div></div>
+            </div>
+            <div class="box box4">
+                <div></div>
+            </div>
+            <div class="box box5">
+                <div></div>
+            </div>
+            <div class="box box6">
+                <div></div>
+            </div>
+            <div class="box box7">
+                <div></div>
+            </div>
+            <div class="ground">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/PaginaInicialImgs/logo.png" alt="logo augebit">
+                </div>
+            </a>
+            <div class="botoesHeader">
+                <a href="sobre.html" class="sobreNos">Sobre Nós</a>
+                <a href="login.html" class="entrar">Entrar</a>
+                <a href="cadastro.html">
+                    <button class="button type1" id="botao-matricula">
+                        <span class="btn-txt">Cadastre-se</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulos">
+            <h1 class="titulo">Faça parte da Augebit!</h1>
+        </div>
+        <form id="form">
+            <div class="pessoalEmpresarial">
+                <div class="pessoal PE ativo" data-tipo="pessoal" onclick="Escolher('pessoal')">Pessoal</div>
+                <div class="divisao"></div>
+                <div class="empresarial PE " data-tipo="empresarial" onclick="Escolher('empresarial')">Empresarial</div>
+            </div>
+
+            <div id="pessoal" class="inputs">
+                <div class="inserir">
+                    <label id="nome" for="nome">Nome</label>
+                    <input id="nomeCadastro" name="nome" type="text" required>
+                </div>
+                <div class="inserir">
+                    <label id="cpf" for="cpf">CPF</label>
+                    <input id="cpfCadastro" name="cpf" type="number" required>
+                </div>
+                <div class="inserir">
+                    <label for="email">Email</label>
+                    <input id="emailCadastro" name="email" type="email" required>
+                </div>
+                <div class="inserir">
+                    <label for="telefone">Telefone com DDD</label>
+                    <input id="telefoneCadastro" name="telefone" type="tel" required>
+                </div>
+                <div class="inserir">
+                    <label for="senha">Senha</label>
+                    <input id="senhaCadastro" name="senha" type="password" required>
+                    <span id="mostrarSenha">Mostrar Senha</span>
+                    <div class="inserirForcaSenha"><div id="medidorPoder"></div></div>
+
+                    <div id="requisitos">
+                        <div id="poderRequisito"></div>
+                        <div id="textoPoder"></div>
+                    </div>
+                </div>
+                <div class="inserir">
+                    <label for="confirmar">Confirmar Senha</label>
+                    <input id="confirmarSenha" name="confirmar" type="password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="matricularBtn">
+                Matricular
+                <div class="arrow-wrapper">
+                    <div class="arrow"></div>
+
+                </div>
+            </button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="infos">
+            <div class="augebit">
+                <img src="img/PaginaInicialImgs/logo.png" alt="">
+                <p class="texto">A Augebit é uma empresa especializada em desenvolver e gerir projetos de design voltados para a produção de equipamentos e produtos de consumo final para industrias</p>
+            </div>
+            <nav>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+        <div class="acompanhe">
+            <h3 class="titulo">NOS ACOMPANHE</h3>
+            <div class="redes">
+                <a target="_blank" href="https://m.facebook.com/augebit/"><img src="img/PaginaInicialImgs/Vector.png" alt="" class="rede"></a>
+                <a target="_blank" href="https://www.youtube.com/@Augebit"><img src="img/PaginaInicialImgs/Vector (1).png" alt="" class="rede"></a>
+                <a target="_blank" href=""><img src="img/PaginaInicialImgs/Vector (2).png" alt="" class="rede"></a>
+                <a target="_blank" href=""><img src="img/PaginaInicialImgs/Vector (3).png" alt="" class="rede"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function Escolher(tipo) {
+
+            fetch(`cadastro_${tipo}.json`)
+                .then(resposta => resposta.json())
+                .then(texto => {
+                    document.getElementById('nome').innerHTML = texto.nome;
+                    document.getElementById('cpf').innerHTML = texto.cpf;
+                })
+                .catch(error => console.error('Erro buscando textos:', error));
+        }
+    </script>
+
+    <script src="cadastroSenha.js"></script>
+    <script src="animacao.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

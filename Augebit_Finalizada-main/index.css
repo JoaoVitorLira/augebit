@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .container{
+    display: flex;
+    padding: 16px 125px;    
+    justify-content: space-around;
+    align-items: center;
+}
+.botoesHeader a{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+.botoesHeader a:hover{
+    color: #4747D9;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #6E6EFF;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.btn-txt {
+    z-index: 1;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #4747D9;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 200px #4747D9;
+    color: #fff;
+    border: none;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+.botoesHeader{
+    display: flex;
+align-items: center;
+gap: 95px;
+}
+
+.infosUm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 104px 222px;
+    gap: 270px;
+    align-items: center;
+}
+
+.infosUmTexto{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 58px;
+}
+.infosUmTexto .titulos{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;  
+}
+.infosUmTexto .titulos .titulo{
+    color: #000;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+}
+.infosUmTexto .titulos .sub{
+    color: #414246;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+
+}
+
+.dois{
+    display: flex;
+padding: 181px 150px;
+justify-content: center;
+align-items: center;
+gap: 285px;
+flex-wrap: nowrap;
+}
+.doisIMG{
+    width: 340px;
+}
+.dois .titulos{
+    display: flex;
+width: 100%;
+height: 210px;
+flex-direction: column;
+align-items: flex-start;
+gap: 14px;
+}
+.dois .titulos .titulo{
+    color: #4747D9;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+}
+.dois .titulos .sub{
+    color: #414246;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+}
+
+.tres{
+    display: flex;
+padding: 112px 129px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 95px;
+background: #4747D9;
+}
+.tres .titulos{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+}
+.tres .titulos .sub{
+    color: #FFF;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+}
+.tres .titulos .titulo{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+}
+.tres .titulos .titulo b{
+    color: #FFF;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 118%;
+}
+.tres .caracs{
+    display: flex;
+align-items: flex-end;
+gap: 111px;
+}
+.tres .caracs .carac{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+.tres .caracs .carac .titulo{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+}
+.tres .caracs .carac .texto{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+}
+.tres .caracs .carac img{
+    width: 50px;
+}
+
+.quatro{
+    display: flex;
+padding: 195px 236px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 74px;
+}
+.quatro .titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+}
+.quatro .titulos .titulo{
+    color: #4747D9;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+}
+.quatro .titulos .sub{
+    color: #414246;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+}
+
+main{
+    background: #CCCFD4;
+}
+
+.cinco{
+    display: flex;
+padding: 91px 144px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 77px;
+background: #4747D9;
+}
+.cinco .princ{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+}
+.cinco .titulos{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.cinco .titulos .titulo{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+}
+.cinco .titulos .titulo b{
+font-weight: 700;
+}
+.cinco .cards{
+    display: flex;
+align-items: flex-start;
+gap: 34px;
+}
+.cinco .cards .card{
+    display: flex;
+padding: 40px;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+border-radius: 15px;
+background: #FFF;
+}
+.cinco .cards .card img{
+    border-radius: 275px;
+border: 3px solid #4747D9;
+width: 100px;
+height: 100px;
+}
+.cinco .cards .card .texto{
+    color: #4F4FD8;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+}
+.cinco .cards .card .cardNomes{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.cinco .cards .card .cardNomes .titulo{
+    color: #4747D9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+.cinco .cards .card .cardNomes .sub{
+    color: #797979;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+#containerPlanos {
+    background-color: #CCCFD4;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+}
+
+.nivel {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+}
+
+.planos {
+    padding: 50px;
+}
+
+.extra {
+    background-color: white;
+    margin-top: 50px;
+    margin-right: 10px;
+    border-radius: 15px;
+    width: 270px;
+    height: 510px;
+    text-align: center;
+
+}
+
+.pro {
+    color: white;
+    background-color: #4747D9;
+    margin-left: 10px;
+    border-radius: 15px;
+    width: 350px;
+    height:600px ;
+}
+
+.nivel2{
+    margin-top: 20px;
+    width: 130px;
+    height: 60px;
+}
+
+.avatar2{
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.containerPlanos,
+h2 {
+    color: #4747D9;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.botaoExtra{
+    background-color: #6E6EFF;
+}
+
+.planos
+button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 10px;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .planos button:hover {
+    transform: scale(1.15);
+    border-color: #fff9;
+  }
+  
+  .planos button:hover .icon {
+    transform: translate(4px);
+  }
+  
+.planos
+button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .planos button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+
+  .extra h3{
+    color: #797979;
+    font-weight: bold;
+    margin: 10px;
+  } 
+
+  .pro h1{
+    color: #eaeaea;
+  }
+
+  .pro h3{
+    margin: 10px;
+  }
+
+  .adquirir{
+    display: flex;
+    justify-content: center;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
+.footer{
+    display: inline-flex;
+    padding: 41px 127px;
+    justify-content: center;
+    align-items: center;
+    gap: 430px;
+}
+.footer .infos{
+    display: flex;
+align-items: center;
+gap: 152px;
+}
+.footer .augebit{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+}
+.footer .infos .texto{
+    color: #414246;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+}
+.footer .infos img{
+width: 225px;
+}
+.footer nav{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+}
+.footer nav a{
+    color: #414246;
+font-family: Poppins;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+}
+.footer .acompanhe{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 23px;
+}
+.footer .acompanhe .titulo{
+    color: #4747D9;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+}
+.footer .redes{
+    display: flex;
+align-items: flex-end;
+gap: 21px;
+}
+
+.cinco .card .cardNomes .titulo {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 675px) {
+
+
+    header #botao-matricula {
+        padding-bottom: 5px;
+        margin-left: -8px;
+        width: 100px;
+        height: 40px;
+    }
+    
+    .quatroIMG {
+        display: none;
+    }
+
+    .quatro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .infosUmIMG{
+        display: none;
+    }
+    .infosUm{
+        padding: 100px 100px;
+    }
+    .infosUm .titulos .titulo{
+        font-size: 30px;
+    }
+    .infosUm .titulos .sub{
+        font-size: 15px;
+    }
+    .dois{
+        padding: 0;
+        gap: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .doisIMG{
+        width: auto;
+    }
+    .dois img{
+        width: 150px;
+    }
+    .dois .titulos{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px 50px 0px 50px;
+        margin-left: 0px;
+    }
+
+    .dois .titulos .titulo, .dois .titulos .sub{
+        text-align: start;
+    }
+    .dois .titulos .titulo, .tres .titulos .titulo, .tres .titulos .titulo b, .tres .caracs .carac .titulo, .quatro .titulos .titulo, .cinco .titulos .titulo b, .cinco .titulos .titulo, .cinco .cards .card .cardNomes .titulo {
+        font-size: 18px;
+    }
+    .dois .titulos .sub, .tres .titulos .sub, .tres .caracs .carac .texto,  .quatro .titulos .sub, .cinco .cards .card .texto, .cinco .cards .card .cardNomes .sub {
+        font-size: 12px;
+    }
+    .cinco .cards .card img{
+        width: 50px;
+        height: 50px;
+    }
+    .tres{    
+        padding: 50px 90px;
+        gap: 40px;
+    }
+
+    .tres .caracs .carac img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .tres .caracs{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .quatro{
+        padding: 40px 90px;
+        /* margin-top: 100px; */
+    }
+    .quatro img{
+        width: 230px;
+    }
+    .cinco .cards{
+        flex-wrap: wrap;
+    }
+
+    .cinco .card .cardNomes .titulo {
+        margin-left: 7px;
+    }
+    .cinco{
+        padding: 40px 90px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 40px 50px;
+    }
+    .footer .acompanhe{
+        padding: 0;
+    }
+    .footer .infos .texto{
+        width: 70%;
+        text-align: justify;
+        font-size: 8px;
+    }
+    .footer .augebit{
+        align-items: center;
+    }
+    .footer .augebit img{
+        width: 100px;
+    }
+    .footer nav a{
+        font-size: 12px;
+    }
+    .footer .infos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .header .botoesHeader{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+    .header .botoesHeader a,     .header .botoesHeader a span{
+        font-size: 13px;
+    }
+    .header .container{
+        display: flex;
+padding: 16px 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 13px;
+    }
+    .header img{
+        width: 100px;
+height: 18.487px;
+    }
+    .header .button{
+        height: 42px;
+        width: 120px;
+    }
+
+
+    .confiraNSPLANOS {
+        font-size: 24px;
+    }
+
+    .pro, .extra {
+        padding: 15px;
+
+    }
+
+    .ulVantagens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .nivel {
+        width: 30px;
+        height: 30px;
+    }
+
+    .avatar2 {
+        width: 110px;
+        height: 110px;
+    }
+
+    .nivel2 {
+        width: 95px;
+        height: 50px;
+    }
+}

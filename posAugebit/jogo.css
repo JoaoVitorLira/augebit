@@ -1,0 +1,33 @@
+#jogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    gap: 100px;
+}
+
+#pontos{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #4747D9;
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  
+  .preto{
+    background-color: #1e1e2b;
+    display: flex;
+    margin-top: 7%;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px #1e1e2b3d;
+  }

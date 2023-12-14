@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .container{
+    display: flex;
+    padding: 16px 125px;    
+    justify-content: space-around;
+    align-items: center;
+}
+.botoesHeader a{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+.botoesHeader a:hover{
+    color: #4747D9;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #6E6EFF;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.btn-txt {
+    z-index: 1;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #4747D9;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 200px #4747D9;
+    color: #fff;
+    border: none;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+.botoesHeader{
+    display: flex;
+align-items: center;
+gap: 95px;
+}
+
+main{
+    background-color: #CCCFD4;
+}
+.footer{
+    display: inline-flex;
+    padding: 41px 127px;
+    justify-content: center;
+    align-items: center;
+    gap: 430px;
+}
+.footer .infos{
+    display: flex;
+align-items: center;
+gap: 152px;
+}
+.footer .augebit{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+}
+.footer .infos .texto{
+    color: #414246;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+}
+.footer .infos img{
+width: 225px;
+}
+.footer nav{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+}
+.footer nav a{
+    color: #414246;
+font-family: Poppins;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+}
+.footer .acompanhe{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 23px;
+}
+.footer .acompanhe .titulo{
+    color: #4747D9;
+    font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+}
+.footer .redes{
+    display: flex;
+align-items: flex-end;
+gap: 21px;
+}
+
+main{
+    display: inline-flex;
+padding: 116px 160px;
+justify-content: center;
+align-items: center;
+gap: 146px;
+}
+.falecom{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 88px;
+}
+.falecom .titulo{
+    color: #000;
+font-family: Poppins;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+}
+.falecom img{
+    width: 424px;
+}
+.card{
+    display: flex;
+padding: 107px 57px;
+flex-direction: column;
+align-items: flex-start;
+gap: 79px;
+border-radius: 10px;
+background: #FFF;
+}
+.contato{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 27px;
+}
+.contato .titulo{
+    color: #051933;
+font-family: Poppins;
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+}
+.card .infos{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 23px;
+}
+.infos .info{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+}
+.infos .info .titulo{
+    color: #051933;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+}
+.infos .info .sub{
+    color: #051933;
+font-family: Poppins;
+font-size: 14.4px;
+font-style: normal;
+font-weight: 500;
+}
+.card .horario{
+    display: flex;
+padding: 22px 16px;
+flex-direction: column;
+align-items: flex-start;
+gap: 11px;
+border-radius: 5px;
+background: #4747D9;
+}
+.horario .titulo{
+    color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+}
+.horario .texto{
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+}
+@media screen and (max-width: 675px) {
+
+    #botao-matricula {
+        padding-bottom: 5px;
+        margin-left: -8px;
+        width: 100px;
+        height: 40px;
+    }
+
+    .falecom .titulo {
+        font: 25px 'Poppins',sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    main {
+        width: 100%;
+    }
+    .footer{
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 40px 50px;
+    }
+    .footer .acompanhe{
+        padding: 0;
+    }
+    .footer .infos .texto{
+        width: 70%;
+        text-align: justify;
+        font-size: 8px;
+    }
+    .footer .augebit{
+        align-items: center;
+    }
+    .footer .augebit img{
+        width: 100px;
+    }
+    .footer nav a{
+        font-size: 12px;
+    }
+    .footer .infos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .header .botoesHeader{
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+    .header .botoesHeader a,     .header .botoesHeader a span{
+        font-size: 13px;
+    }
+    .header .container{
+        display: flex;
+padding: 16px 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 13px;
+    }
+    .header img{
+        width: 100px;
+height: 18.487px;
+    }
+    .header .button{
+        height: 42px;
+        width: 120px;
+    }
+    main{
+        padding: 40px 70px ;
+        flex-direction: column-reverse;
+    }
+    .falecom img{
+        width: 200px;
+    }
+    .infos .info .titulo{
+        color: #051933;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .infos .info .sub{
+        color: #051933;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 10.399px; /* 103.993% */
+    }
+    .horario .titulo{
+        font-size: 12px;
+    }
+    .horario .texto{
+        font-size: 10px;
+    }
+    .falecom h1.titulo{
+        font-size: 25px;
+    }
+    .falecom{
+        align-items: center;
+        gap: 40px;
+    }
+    .contato .titulo{
+        font-size: 25px;
+    }
+    .card{
+        padding: 47px 70px;
+    }
+}
