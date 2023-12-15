@@ -51,12 +51,13 @@ window.onload = function () {
 
         ctx.fillStyle = "#4747D9"//cor da cobrinha
         for (var i = 0; i < trail.length; i++) {
-            ctx.fillRect(trail[i].x * tm, trail[i].y * tm, tm, tm);
+            ctx.fillRect(trail[i].x * tm, trail[i].y * tm, tm, tm);//pinta o elemento do rastro da cobra, conforme a posição, igualmente a linha que pinta a maçã
+
+            //pega a posição do rastro e assim pinta a cobra (calcula a posição e tamanho da cobra para que dessa forma colorir o espaço do rastro da própria, assim dando a impressão de que a cobra aumentou de tamanho)
             if (trail[i].x == px && trail[i].y == py) {
                 vx = vy=0;
                 tail = 5;
-            } //pega a posição do rastro e assim pinta a cobra (calcula a posição e tamanho da cobra para que dessa forma colorir o espaço do rastro da própria, assim dando a impressão de que a cobra aumentou de tamanho)
-
+            } 
         }
 
         //movimento da cobra:
